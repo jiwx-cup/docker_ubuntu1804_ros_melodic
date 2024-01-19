@@ -4,10 +4,6 @@ Dockerfile to setup a docker container of Ubuntu 18.04 which includes ROS and GU
 ## What is this?
 By using a Dockerfile in this repository, you can build and run a docker image/container of Ubuntu 18.04 which has ROS Melodic and GUI application like rviz can be displayed. It will make your ROS environment setting up more efficient.  
 
-## Supported platforms
-* [main branch](https://github.com/ShisatoYano/docker_ubuntu1804_ros_melodic/tree/main): For native Linux or VM like VirtualBox  
-* [for_wsl branch](https://github.com/ShisatoYano/docker_ubuntu1804_ros_melodic/tree/for_wsl): For WSL on Windows11
-
 ## Requirements
 ### OS
 To install Docker Engine, you need the 64-bit version of one of these Ubuntu versions:  
@@ -28,16 +24,9 @@ This extension is used to build a docker image, run a docker container and opera
 ![](images/vscode_server.PNG)
 
 ### 2. Clone this repository from GitHub
-#### 2-1. For native Linux or VM like VirtualBox
-Clone this repository.  
+Clone this repository on your Ubuntu.  
 ```bash
 $ git clone https://github.com/ShisatoYano/docker_ubuntu1804_ros_melodic.git
-```
-
-#### 2-2. For WSL on Windows11
-Clone this repository with ```-b for_wsl``` option.  
-```bash
-$ git clone -b for_wsl https://github.com/ShisatoYano/docker_ubuntu1804_ros_melodic.git
 ```
 
 ### 3. Open this repo's directory by Dev Containers
