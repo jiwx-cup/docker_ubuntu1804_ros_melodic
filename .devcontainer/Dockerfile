@@ -5,7 +5,7 @@ ARG DEBIAN_FRONTEND=noninteractive
 ARG UID=2000
 ARG GID=2000
 
-RUN apt update && apt install -y \
+RUN sed -i 's#http://archive.ubuntu.com/#http://mirrors.tuna.tsinghua.edu.cn/#' /etc/apt/sources.list && apt update && apt install -y \
 git \
 vim \
 wget \
