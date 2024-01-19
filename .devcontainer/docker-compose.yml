@@ -6,11 +6,7 @@ services:
     build: 
       context: .
       dockerfile: Dockerfile
-    environment:
-      - DISPLAY
-      - QT_X11_NO_MITSHM=1
     volumes:
-      - /tmp/.X11-unix:/tmp/.X11-unix
       - ../ros_bag:/home/dev-user/catkin_ws/ros_bag
     tty: true
     network_mode: "host"
